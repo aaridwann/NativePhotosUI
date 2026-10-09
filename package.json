@@ -1,0 +1,24 @@
+{
+  "name": "react-native-photos-ui",
+  "version": "1.0.0",
+  "description": "TurboModule PHPickerViewController for React Native New Architecture",
+  "main": "src/index.ts",
+  "files": [
+    "src",
+    "ios",
+    "NativePhotosUI.podspec",
+    "!**/__tests__"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RNPhotosUISpec",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.photosui"
+    }
+  }
+}
