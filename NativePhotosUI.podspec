@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com"
   s.license      = "MIT"
   s.author       = "Developer"
-  s.platforms    = { :ios => "16.0" }
+  s.platforms    = { :ios => "15.0" }
   s.source       = { :git => "" }
 
   s.source_files = "**/*.{h,m,mm,swift}"

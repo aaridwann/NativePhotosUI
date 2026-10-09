@@ -114,8 +114,12 @@ public class PhotoPickerTurboModule: NSObject {
         case "livePhotos":
             return .livePhotos
         case "depthEffectPhotos":
-            if #available(iOS 15.0, *) {
-                return .depthEffectPhotos
+              if #available(iOS 15.0, *) {
+                if #available(iOS 16.0, *) {
+                    return .depthEffectPhotos
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             return .images
         case "bursts":
